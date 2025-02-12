@@ -44,6 +44,34 @@ html, body {
     }
 }
 
+.aerith-container {
+    position: fixed;
+    right: -700px;
+    bottom: -150px;
+    width: 2000px;
+}
+
+.aerith-container .gif-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transform: scaleX(-1);
+}
+
+.aerith-container .date-text {
+    position: absolute;
+    bottom: 150px;
+    left: 10px;
+    right: 200px;
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+    padding: 10px;
+    font-size: 8rem;
+    border-radius: 5px;
+    text-align: left;
+}
+
+
 @font-face {
     font-family: 'FinalFantasy';
     src: url('assets/Runic\ MT\ Std\ Condensed.otf') format('opentype');
