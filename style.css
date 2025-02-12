@@ -1,0 +1,42 @@
+@font-face {
+    font-family: 'FinalFantasy';
+    src: url('assets/Runic\ MT\ Std\ Condensed.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{ 
+	font-family: 'subtitle';
+	src: url('assets/MgOpenCosmeticaRegular.ttf') format('truetype') ;  
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+h1 {
+    font-family: 'FinalFantasy', sans-serif;
+    font-size: 8rem;
+    text-align: center;
+    margin: 0.5em 0;
+    color: black;
+    text-decoration: underline;
+    text-shadow: 
+        0.5px  0.5px 0 white,
+        -0.5px -0.5px 0 white,
+        0.5px -0.5px 0 white,
+        -0.5px  0.5px 0 white;
+}
+
+p {
+    font-family: 'subtitle'; 
+    font-size: 2rem;
+    text-align: center;
+    margin: 0.5em 0;
+    color: white;
+    text-shadow: 
+        3px  1px 0 black,
+        2px 0.5px 0 black,
+        0.5px -0.5px 0 black,
+        1px  0.5px 0 black;
+}
