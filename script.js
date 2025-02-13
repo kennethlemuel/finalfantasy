@@ -1,12 +1,12 @@
 document.addEventListener("DOMContentLoaded", function() {
     
     //overlay and volume code
-    const overlay = document.getElementById('overlay');
+    const whiteoverlay = document.getElementById('whiteoverlay');
     const overlaytext = document.getElementById('overlaytext');
     const audioEl = document.getElementById('bg');
     audioEl.volume = 0.8;
 
-    overlay.addEventListener('click', function() {
+    whiteoverlay.addEventListener('click', function() {
         
         overlaytext.style.animation = 'none';
         overlaytext.style.opacity = '0';
@@ -17,8 +17,8 @@ document.addEventListener("DOMContentLoaded", function() {
             volumefade(audioEl, 0.7, 0.3, 10000);
         },500);
 
-        overlay.addEventListener('transitionend', function() {
-            overlay.style.display = 'none';
+        whiteoverlay.addEventListener('transitionend', function() {
+            whiteoverlay.style.display = 'none';
             const dialogueBox = document.getElementById("dialogueBox");
             dialogueBox.style.display = 'block';
       }, {once: true});
