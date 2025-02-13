@@ -1,10 +1,10 @@
 document.addEventListener("DOMContentLoaded", function() {
     
     //overlay and volume code
-    const overlay = document.getElementById('overlay');
+    const overlay = document.getElementById('whiteoverlay');
     const overlaytext = document.getElementById('overlaytext');
     const audioEl = document.getElementById('bg');
-    audioEl.volume = 0.8;
+    audioEl.volume = 0.6;
 
     overlay.addEventListener('click', function() {
         
@@ -12,22 +12,38 @@ document.addEventListener("DOMContentLoaded", function() {
         overlaytext.style.opacity = '0';
 
         setTimeout(() => {
-            audioEl.play();
             overlay.style.opacity = '0';
-            volumefade(audioEl, 0.7, 0.3, 10000);
         },500);
 
         overlay.addEventListener('transitionend', function() {
             overlay.style.display = 'none';
-            const dialogueBox = document.getElementById("dialogueBox");
-            dialogueBox.style.display = 'block';
+            const cutscene = document.getElementById('cutscene');
+            cutscene.style.display = 'block';
+            cutscene.play();
       }, {once: true});
     });
+    
+    const cutscene = document.getElementById('cutscene');
+    cutscene.addEventListener('ended', function() {
+        const blackoverlay = document.getElementById('blackoverlay');
+        blackoverlay.style.display = 'block';
 
+        void blackoverlay.offsetWidth;
+        blackoverlay.style.opacity = '1';
+    
+        blackoverlay.addEventListener('transitionend', function() {
+            cutscene.style.display = 'none';
+            blackoverlay.style.display = 'none';
+            const dialogueBox = document.getElementById("dialogueBox");
+            dialogueBox.style.display = 'block';
+            audioEl.play();
+            volumefade(audioEl, 0.6, 0.1, 8000);
+        }, {once: true});
+    });
 
     //dialogue code
     const dialogues = [
-        "Hey there Elysia, I'm Aerith!",
+        ,
         "Ken told me a lot about you...",
         "Hm... especially about your beautiful soul.",
         "He must really love you, doesn't he!",

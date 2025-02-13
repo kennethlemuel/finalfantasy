@@ -22,17 +22,33 @@
             <source src = "assets/Piano_Version.mp3" type = "audio/mpeg">
         </audio>
 
-        <div id="overlay">
+        <div id="whiteoverlay">
             <div id="overlaytext">CLICK ANYWHERE TO CONTINUE</div>
         </div>
 
+        <video id="cutscene" style="display: none ;" playsinline>
+            <source src="assets/aerith clip.mp4" type="video/mp4"/>   
+        </video>
+
+
+        <div id="blackoverlay" style="display: none;"></div>
+
         <div class="aerith-container">
-            <img src="assets/aerithpng.png" alt="aerith gif" class="gif-img">
+            <img src="assets/aerithpng.png" alt="aerith sprite" class="gif-img">
+        </div>
+
+        <div id="dialogueBox" style="display: none;">
+            <p id="dialogueText">Hey there Elysia, I'm Aerith!</p>
+        </div>
+
+        <div class="ken-container">
+            <img src="assets/ken.png" alt="ken sprite" class="sprite-img">
           </div>
 
-          <div id="dialogueBox">
-            <p id="dialogueText">Hello! I'm Aerith!</p>
-          </div>
+          <div id="dialogueBox2">
+            <p id="dialogueText2">hey there elys!!</p>
+        </div>
+
         <script src="script.js"></script>
     </body>
 </html>
