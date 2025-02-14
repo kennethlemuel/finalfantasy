@@ -12,7 +12,7 @@ html, body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: white;
+    background: ;
     z-index: 100;
     display: flex;
     justify-content: center;
@@ -68,9 +68,9 @@ html, body {
 }
 
 .aerith-container {
-    position: relative;
-    margin-right: 20px;
-    margin-top: 500px;
+    position: absolute;
+    top: 5000px;
+    right: 100px;
     width: 400px;
     float: right;
 }
@@ -83,9 +83,8 @@ html, body {
 }
 
 .ken-container {
-    position: relative;
-    margin-right: 800px;
-    margin-top: 200px;
+    position: absolute;
+    top: 5000px;
     width: 650px;
     float: right;
 }
@@ -94,11 +93,9 @@ html, body {
     display: block;
     width: 100%;
     height: auto;
-    transform: scaleX(-1);
 }
 
 #dialogueBox {
-    display: none;
     position: fixed;
     bottom: 200px;
     left: 0;
