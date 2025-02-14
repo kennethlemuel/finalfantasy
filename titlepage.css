@@ -3,10 +3,16 @@ html, body {
     margin: 0;
     padding: 0;
     background: url('assets/chapel.jpg') no-repeat center center fixed;
+    cursor: url('assets/cursor.cur') 16 16, auto;
     background-size: cover;
     overflow: hidden;
 }
 
+.spotify-container {
+    max-width: 600px;  
+    margin: 0 auto;   
+  }
+  
 
 @font-face {
     font-family: 'FinalFantasy';

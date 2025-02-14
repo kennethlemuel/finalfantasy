@@ -1,22 +1,12 @@
 <!DOCTYPE html>
 <html lang = "en">
-    
     <head>
         <meta charset = "UTF-8"/>
         <meta name = "viewport" content = "width=device-width, initial-scale = 1.0" />
         <link rel = "stylesheet" href = "style.css">
         <title> happy valentine's elys <3</title> 
     </head>
-    
-    <style>
-        html, body {
-            margin: 0;
-            padding: 0;
-            background: url('assets/chapel.jpg') no-repeat center center fixed;
-            background-size: cover;
-            overflow: hidden;
-        }
-    </style>
+
     <body>
         <audio id="bg" loop>
             <source src = "assets/Piano_Version.mp3" type = "audio/mpeg">
@@ -30,23 +20,26 @@
             <source src="assets/aerith clip.mp4" type="video/mp4"/>   
         </video>
 
-        <div id = "maincontent" style = "display: none;">
-            <div id="blackoverlay"></div>
-
+        <div id = "maincontent" style = "display: none ;">
             <div class="aerith-container">
                 <img src="assets/aerithpng.png" alt="aerith sprite" class="gif-img">
             </div>
 
             <div id="dialogueBox">
-                <p id="dialogueText">Hey there Elysia, I'm Aerith!</p>
+                <p id="dialogueText"></p>
             </div>
 
             <div class="ken-container">
                 <img src="assets/ken.png" alt="ken sprite" class="sprite-img">
             </div>
 
-            <div id="dialogueBox2">
+            <!--<div id="dialogueBox2">
                 <p id="dialogueText2">hey there elys!!</p>
+            </div> to be added later on--> 
+            
+            <div id="finalChoice" style="display: none;">
+                <button id="yesButton">Yes</button>
+                <button id="noButton">No</button>
             </div>
         </div>   
         <script src="script.js"></script>
